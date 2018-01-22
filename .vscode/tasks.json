@@ -1,0 +1,116 @@
+{
+  "version":"2.0.0",
+  "tasks": [
+    {
+      "label":"Build jasp|release",
+      "type":"shell",
+      "command":"cd build/jasp/release && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jasp|debug",
+      "type":"shell",
+      "command":"cd build/jasp/debug && make -j && make install",
+      "group": {
+        "kind":"build",
+        "isDefault":true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jasp|relwithdbginfo",
+      "type":"shell",
+      "command":"cd build/jasp/relwithdbginfo && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jasp|minsizerel",
+      "type":"shell",
+      "command":"cd build/jasp/minsizerel && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jamp|release",
+      "type":"shell",
+      "command":"cd build/jamp/release && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jamp|debug",
+      "type":"shell",
+      "command":"cd build/jamp/debug && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jamp|relwithdbginfo",
+      "type":"shell",
+      "command":"cd build/jamp/relwithdbginfo && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build jamp|minsizerel",
+      "type":"shell",
+      "command":"cd build/jamp/minsizerel && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build josp|release",
+      "type":"shell",
+      "command":"cd build/josp/release && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build josp|debug",
+      "type":"shell",
+      "command":"cd build/josp/debug && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build josp|relwithdbginfo",
+      "type":"shell",
+      "command":"cd build/josp/relwithdbginfo && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label":"Build josp|minsizerel",
+      "type":"shell",
+      "command":"cd build/josp/minsizerel && make -j && make install",
+      "group":"build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+  ]
+}
